@@ -149,8 +149,8 @@
         </div>
         <PowerRankings />
     </div>
-    <div id="StandingSmall">
-    </div>
+    <div class="StandingsSmall">
+    <StandingsSmall />
     <div class="leagueData">
         <div class="homeBanner">
             {#await nflState}
