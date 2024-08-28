@@ -1,7 +1,7 @@
 <script>
 	import LinearProgress from '@smui/linear-progress';
 	import { getNflState, leagueName, getAwards, getLeagueTeamManagers, homepageText, managers, gotoManager, enableBlog, waitForAll } from '$lib/utils/helper';
-	import { Transactions, PowerRankings, HomePost} from '$lib/components';
+	import { Standings, Transactions, PowerRankings, HomePost} from '$lib/components';
 	import { getAvatarFromTeamManagers, getTeamFromTeamManagers } from '$lib/utils/helperFunctions/universalFunctions';
 
     const nflState = getNflState();
@@ -169,7 +169,7 @@
                 <div class="center">Something went wrong: {error.message}</div>
             {/await}
         </div>
-
+        
         <div id="currentChamp">
             {#await waitForAll(podiumsData, leagueTeamManagersData)}
                 <p class="center">Retrieving awards...</p>
