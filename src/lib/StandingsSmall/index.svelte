@@ -4,7 +4,7 @@
   	import DataTable, { Head, Body, Row, Cell } from '@smui/data-table';
 	import LinearProgress from '@smui/linear-progress';
     import { onMount } from 'svelte';
-    import Standing from './Standing.svelte';
+    import Standing from './StandingSmall.svelte';
 
     export let standingsData, leagueTeamManagersData;
 
